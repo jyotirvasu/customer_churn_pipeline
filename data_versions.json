@@ -1,0 +1,49 @@
+{
+  "versions": [
+    {
+      "version_id": "v20250824_150654",
+      "timestamp": "2025-08-24T15:06:54.219565",
+      "description": "Daily data ingestion completed",
+      "files": [
+        {
+          "type": "customers",
+          "path": "data/raw/customers/customers_20250824_150645.csv",
+          "size": 451173
+        },
+        {
+          "type": "transactions",
+          "path": "data/raw/transactions/transactions_20250824_150653.csv",
+          "size": 14456225
+        },
+        {
+          "type": "support",
+          "path": "data/raw/support/support_20250824_150654.csv",
+          "size": 435107
+        }
+      ]
+    },
+    {
+      "version_id": "v20250824_151104",
+      "timestamp": "2025-08-24T15:11:04.553211",
+      "description": "Daily data ingestion completed",
+      "files": [
+        {
+          "type": "customers",
+          "path": "data/raw/customers/customers_20250824_151059.csv",
+          "size": 451173
+        },
+        {
+          "type": "transactions",
+          "path": "data/raw/transactions/transactions_20250824_151103.csv",
+          "size": 14456225
+        },
+        {
+          "type": "support",
+          "path": "data/raw/support/support_20250824_151104.csv",
+          "size": 435107
+        }
+      ]
+    }
+  ],
+  "current_version": "v20250824_151104"
+}
