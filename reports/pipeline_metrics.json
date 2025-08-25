@@ -1,0 +1,159 @@
+{
+  "pipeline_runs": [
+    {
+      "timestamp": "2025-08-24T14:42:48.750911",
+      "stage": "data_ingestion",
+      "duration_seconds": 0.013236761093139648,
+      "status": "failed",
+      "additional_info": {}
+    },
+    {
+      "timestamp": "2025-08-24T14:42:48.751481",
+      "stage": "data_ingestion",
+      "duration_seconds": 0.013819694519042969,
+      "status": "failed",
+      "additional_info": {
+        "error": "Data ingestion failed"
+      }
+    },
+    {
+      "timestamp": "2025-08-24T14:44:17.157176",
+      "stage": "data_ingestion",
+      "duration_seconds": 0.007750511169433594,
+      "status": "failed",
+      "additional_info": {}
+    },
+    {
+      "timestamp": "2025-08-24T14:44:17.158545",
+      "stage": "data_ingestion",
+      "duration_seconds": 0.009119510650634766,
+      "status": "failed",
+      "additional_info": {
+        "error": "Data ingestion failed"
+      }
+    },
+    {
+      "timestamp": "2025-08-24T14:53:19.562500",
+      "stage": "data_ingestion",
+      "duration_seconds": 0.01342320442199707,
+      "status": "failed",
+      "additional_info": {}
+    },
+    {
+      "timestamp": "2025-08-24T14:53:19.563722",
+      "stage": "data_ingestion",
+      "duration_seconds": 0.014647483825683594,
+      "status": "failed",
+      "additional_info": {
+        "error": "Data ingestion failed"
+      }
+    },
+    {
+      "timestamp": "2025-08-24T14:54:08.862177",
+      "stage": "data_ingestion",
+      "duration_seconds": 0.00474095344543457,
+      "status": "failed",
+      "additional_info": {}
+    },
+    {
+      "timestamp": "2025-08-24T14:54:08.862876",
+      "stage": "data_ingestion",
+      "duration_seconds": 0.0054395198822021484,
+      "status": "failed",
+      "additional_info": {
+        "error": "Data ingestion failed"
+      }
+    },
+    {
+      "timestamp": "2025-08-24T15:06:54.222083",
+      "stage": "data_ingestion",
+      "duration_seconds": 10.088416814804077,
+      "status": "success",
+      "additional_info": {
+        "version_id": "v20250824_150654",
+        "files_ingested": 3
+      }
+    },
+    {
+      "timestamp": "2025-08-24T15:06:56.514255",
+      "stage": "data_versioning_summary",
+      "duration_seconds": 0.002719402313232422,
+      "status": "success",
+      "additional_info": {
+        "current_version": "v20250824_150654",
+        "total_versions": 1,
+        "versioning_report": "/opt/airflow/reports/data_versioning_20250824_150656.txt"
+      }
+    },
+    {
+      "timestamp": "2025-08-24T15:08:28.295830",
+      "stage": "data_preparation_training",
+      "duration_seconds": 5.910404443740845,
+      "status": "success",
+      "additional_info": {
+        "features_count": 28,
+        "training_samples": 10000,
+        "best_model": "random_forest",
+        "best_auc_score": 0.7593397980491433,
+        "best_accuracy": 0.729
+      }
+    },
+    {
+      "timestamp": "2025-08-24T15:09:32.861695",
+      "stage": "monitoring_summary",
+      "duration_seconds": 0.002169370651245117,
+      "status": "success",
+      "additional_info": {
+        "health_status": "warning",
+        "success_rate": 0.3,
+        "monitoring_report": "/opt/airflow/reports/pipeline_monitoring_20250824_150932.txt"
+      }
+    },
+    {
+      "timestamp": "2025-08-24T15:11:04.557357",
+      "stage": "data_ingestion",
+      "duration_seconds": 5.165638208389282,
+      "status": "success",
+      "additional_info": {
+        "version_id": "v20250824_151104",
+        "files_ingested": 3
+      }
+    },
+    {
+      "timestamp": "2025-08-24T15:15:46.666153",
+      "stage": "data_versioning_summary",
+      "duration_seconds": 0.005221366882324219,
+      "status": "success",
+      "additional_info": {
+        "current_version": "v20250824_151104",
+        "total_versions": 2,
+        "versioning_report": "/opt/airflow/reports/data_versioning_20250824_151546.txt"
+      }
+    },
+    {
+      "timestamp": "2025-08-24T15:15:55.513854",
+      "stage": "data_preparation_training",
+      "duration_seconds": 6.754330396652222,
+      "status": "success",
+      "additional_info": {
+        "features_count": 28,
+        "training_samples": 10000,
+        "best_model": "random_forest",
+        "best_auc_score": 0.7593397980491433,
+        "best_accuracy": 0.729
+      }
+    },
+    {
+      "timestamp": "2025-08-24T15:15:58.276662",
+      "stage": "inference",
+      "duration_seconds": 0.01140594482421875,
+      "status": "success",
+      "additional_info": {
+        "customers_scored": 5,
+        "high_risk_customers": 2,
+        "avg_churn_probability": 0.45,
+        "inference_file": "/opt/airflow/reports/inference_results_20250824_151558.csv"
+      }
+    }
+  ]
+}

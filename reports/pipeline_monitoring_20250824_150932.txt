@@ -1,0 +1,30 @@
+PIPELINE MONITORING SUMMARY
+========================================
+
+Generated: 2025-08-24 15:09:32.861064
+
+OVERALL HEALTH:
+--------------------
+Status: warning
+Success Rate: 30.00%
+Average Duration: 1.61 seconds
+Last Run: 2025-08-24T15:08:28.295830
+Total Runs: 11
+
+RECENT PIPELINE STAGES PERFORMANCE:
+-----------------------------------
+data_ingestion:
+  Success Rate: 12.50%
+  Avg Duration: 1.27s
+  Total Runs: 8
+
+data_versioning_summary:
+  Success Rate: 100.00%
+  Avg Duration: 0.00s
+  Total Runs: 1
+
+data_preparation_training:
+  Success Rate: 100.00%
+  Avg Duration: 5.91s
+  Total Runs: 1
+

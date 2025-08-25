@@ -1,0 +1,25 @@
+DATA QUALITY REPORT
+==================================================
+
+Generated: 2025-08-24 15:13:02.042641
+
+Total Records: 10000
+Duplicate Customers: 0
+
+Missing Values by Column:
+  customer_id: 0
+  age: 0
+  income: 0
+  account_type: 0
+  tenure_months: 0
+  location: 0
+  has_credit_card: 0
+  num_products: 0
+  is_active_member: 0
+  churn: 0
+
+Data Types Correct: True
+Age Range Valid: True
+Income Values Positive: True
+
+No critical issues identified.

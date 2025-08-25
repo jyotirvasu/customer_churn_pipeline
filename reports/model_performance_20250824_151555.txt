@@ -1,0 +1,21 @@
+MODEL PERFORMANCE REPORT
+==================================================
+
+Generated: 2025-08-24 15:15:55.512619
+
+LOGISTIC_REGRESSION
+------------------------------
+Accuracy: 0.7350
+Precision: 0.6456
+Recall: 0.3953
+F1-Score: 0.4904
+AUC Score: 0.7371
+
+RANDOM_FOREST
+------------------------------
+Accuracy: 0.7290
+Precision: 0.6122
+Recall: 0.4357
+F1-Score: 0.5091
+AUC Score: 0.7593
+
