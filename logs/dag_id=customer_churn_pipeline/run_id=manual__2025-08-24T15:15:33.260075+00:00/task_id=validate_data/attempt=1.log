@@ -1,0 +1,35 @@
+[2025-08-24T15:15:46.346+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-24T15:15:46.392+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: customer_churn_pipeline.validate_data manual__2025-08-24T15:15:33.260075+00:00 [queued]>
+[2025-08-24T15:15:46.399+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: customer_churn_pipeline.validate_data manual__2025-08-24T15:15:33.260075+00:00 [queued]>
+[2025-08-24T15:15:46.400+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-08-24T15:15:46.412+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): validate_data> on 2025-08-24 15:15:33.260075+00:00
+[2025-08-24T15:15:46.427+0000] {standard_task_runner.py:63} INFO - Started process 211 to run task
+[2025-08-24T15:15:46.434+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'customer_churn_pipeline', 'validate_data', 'manual__2025-08-24T15:15:33.260075+00:00', '--job-id', '204', '--raw', '--subdir', 'DAGS_FOLDER/***_dag.py', '--cfg-path', '/tmp/tmphxlmqj_n']
+[2025-08-24T15:15:46.439+0000] {standard_task_runner.py:91} INFO - Job 204: Subtask validate_data
+[2025-08-24T15:15:46.522+0000] {task_command.py:426} INFO - Running <TaskInstance: customer_churn_pipeline.validate_data manual__2025-08-24T15:15:33.260075+00:00 [running]> on host e7c10817c3ee
+[2025-08-24T15:15:46.640+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@company.com' AIRFLOW_CTX_DAG_OWNER='data-team' AIRFLOW_CTX_DAG_ID='customer_churn_pipeline' AIRFLOW_CTX_TASK_ID='validate_data' AIRFLOW_CTX_EXECUTION_DATE='2025-08-24T15:15:33.260075+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-24T15:15:33.260075+00:00'
+[2025-08-24T15:15:46.641+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-24T15:15:46.702+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:15:46,702 - DataValidator - INFO - Validating customer data
+[2025-08-24T15:15:46.702+0000] {airflow_dag.py:82} INFO - Validating customer data
+[2025-08-24T15:15:46.703+0000] {logging_mixin.py:188} INFO - Index(['customer_id', 'age', 'income', 'account_type', 'tenure_months',
+       'location', 'has_credit_card', 'num_products', 'is_active_member',
+       'churn'],
+      dtype='object')
+[2025-08-24T15:15:46.726+0000] {logging_mixin.py:188} INFO -    customer_id  age  income  ... num_products  is_active_member churn
+0  CUST_000001   52   25867  ...            2                 1     1
+1  CUST_000002   42   31171  ...            2                 1     0
+2  CUST_000003   54   26938  ...            4                 0     1
+3  CUST_000004   67   38376  ...            1                 1     0
+4  CUST_000005   41   66077  ...            2                 1     0
+
+[5 rows x 10 columns]
+[2025-08-24T15:15:46.730+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:15:46,730 - DataValidator - INFO - Validation completed. Issues found: 0
+[2025-08-24T15:15:46.730+0000] {airflow_dag.py:82} INFO - Validation completed. Issues found: 0
+[2025-08-24T15:15:46.730+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:15:46,730 - DataValidator - INFO - Quality report generated: /opt/***/reports/data_quality_report_20250824_151546.txt
+[2025-08-24T15:15:46.730+0000] {airflow_dag.py:82} INFO - Quality report generated: /opt/***/reports/data_quality_report_20250824_151546.txt
+[2025-08-24T15:15:46.731+0000] {python.py:237} INFO - Done. Returned value was: Data validation passed
+[2025-08-24T15:15:46.731+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-24T15:15:46.759+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=customer_churn_pipeline, task_id=validate_data, execution_date=20250824T151533, start_date=20250824T151546, end_date=20250824T151546
+[2025-08-24T15:15:46.818+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-08-24T15:15:46.844+0000] {taskinstance.py:3482} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-08-24T15:15:46.846+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,12 @@
+2025-08-24 15:08:22,400 - DataPreparation - INFO - Cleaning customer data
+2025-08-24 15:08:22,409 - DataPreparation - INFO - Data cleaned. Shape: (10000, 12)
+2025-08-24 15:08:22,641 - DataPreparation - INFO - Aggregating transaction data
+2025-08-24 15:08:23,337 - DataPreparation - INFO - Transaction aggregation completed. Shape: (10000, 8)
+2025-08-24 15:08:23,345 - DataPreparation - INFO - Aggregating support data
+2025-08-24 15:08:23,352 - DataPreparation - INFO - Support aggregation completed. Shape: (2588, 4)
+2025-08-24 15:15:48,778 - DataPreparation - INFO - Cleaning customer data
+2025-08-24 15:15:48,788 - DataPreparation - INFO - Data cleaned. Shape: (10000, 12)
+2025-08-24 15:15:49,021 - DataPreparation - INFO - Aggregating transaction data
+2025-08-24 15:15:49,870 - DataPreparation - INFO - Transaction aggregation completed. Shape: (10000, 8)
+2025-08-24 15:15:49,878 - DataPreparation - INFO - Aggregating support data
+2025-08-24 15:15:49,884 - DataPreparation - INFO - Support aggregation completed. Shape: (2588, 4)

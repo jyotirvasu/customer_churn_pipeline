@@ -1,0 +1,16 @@
+2025-08-24 15:08:23,532 - ChurnModel - INFO - Preparing model data
+2025-08-24 15:08:23,541 - ChurnModel - INFO - Data prepared. Features: 23, Samples: 10000
+2025-08-24 15:08:23,542 - ChurnModel - INFO - Training models
+2025-08-24 15:08:23,546 - ChurnModel - INFO - Training logistic_regression
+2025-08-24 15:08:23,933 - ChurnModel - INFO - logistic_regression - Accuracy: 0.735, AUC: 0.737
+2025-08-24 15:08:23,933 - ChurnModel - INFO - Training random_forest
+2025-08-24 15:08:28,293 - ChurnModel - INFO - random_forest - Accuracy: 0.729, AUC: 0.759
+2025-08-24 15:08:28,295 - ChurnModel - INFO - Model report generated: /opt/airflow/reports/model_performance_20250824_150828.txt
+2025-08-24 15:15:50,071 - ChurnModel - INFO - Preparing model data
+2025-08-24 15:15:50,082 - ChurnModel - INFO - Data prepared. Features: 23, Samples: 10000
+2025-08-24 15:15:50,082 - ChurnModel - INFO - Training models
+2025-08-24 15:15:50,088 - ChurnModel - INFO - Training logistic_regression
+2025-08-24 15:15:50,990 - ChurnModel - INFO - logistic_regression - Accuracy: 0.735, AUC: 0.737
+2025-08-24 15:15:50,992 - ChurnModel - INFO - Training random_forest
+2025-08-24 15:15:55,510 - ChurnModel - INFO - random_forest - Accuracy: 0.729, AUC: 0.759
+2025-08-24 15:15:55,512 - ChurnModel - INFO - Model report generated: /opt/airflow/reports/model_performance_20250824_151555.txt

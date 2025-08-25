@@ -1,0 +1,17 @@
+2025-08-24 14:42:48,751 - PipelineMonitor - INFO - Logged metrics for data_ingestion: failed in 0.01s
+2025-08-24 14:42:48,751 - PipelineMonitor - INFO - Logged metrics for data_ingestion: failed in 0.01s
+2025-08-24 14:44:17,157 - PipelineMonitor - INFO - Logged metrics for data_ingestion: failed in 0.01s
+2025-08-24 14:44:17,159 - PipelineMonitor - INFO - Logged metrics for data_ingestion: failed in 0.01s
+2025-08-24 14:53:19,563 - PipelineMonitor - INFO - Logged metrics for data_ingestion: failed in 0.01s
+2025-08-24 14:53:19,563 - PipelineMonitor - INFO - Logged metrics for data_ingestion: failed in 0.01s
+2025-08-24 14:54:08,862 - PipelineMonitor - INFO - Logged metrics for data_ingestion: failed in 0.00s
+2025-08-24 14:54:08,863 - PipelineMonitor - INFO - Logged metrics for data_ingestion: failed in 0.01s
+2025-08-24 15:06:54,222 - PipelineMonitor - INFO - Logged metrics for data_ingestion: success in 10.09s
+2025-08-24 15:06:56,514 - PipelineMonitor - INFO - Logged metrics for data_versioning_summary: success in 0.00s
+2025-08-24 15:08:28,296 - PipelineMonitor - INFO - Logged metrics for data_preparation_training: success in 5.91s
+2025-08-24 15:09:32,861 - PipelineMonitor - WARNING - ALERT: Pipeline health is poor. Success rate: 30.00%
+2025-08-24 15:09:32,862 - PipelineMonitor - INFO - Logged metrics for monitoring_summary: success in 0.00s
+2025-08-24 15:11:04,557 - PipelineMonitor - INFO - Logged metrics for data_ingestion: success in 5.17s
+2025-08-24 15:15:46,667 - PipelineMonitor - INFO - Logged metrics for data_versioning_summary: success in 0.01s
+2025-08-24 15:15:55,514 - PipelineMonitor - INFO - Logged metrics for data_preparation_training: success in 6.75s
+2025-08-24 15:15:58,277 - PipelineMonitor - INFO - Logged metrics for inference: success in 0.01s

@@ -1,0 +1,12 @@
+2025-08-24 15:06:44,141 - DataFetch - INFO - Fetching customer records
+2025-08-24 15:06:45,306 - DataFetch - INFO - Fetched 10000 Customer records
+2025-08-24 15:06:45,342 - DataFetch - INFO - Fetching Transaction data for customers
+2025-08-24 15:06:53,010 - DataFetch - INFO - Fetched 200046 transaction records
+2025-08-24 15:06:53,653 - DataFetch - INFO - Fetching support data for customers
+2025-08-24 15:06:54,200 - DataFetch - INFO - Fetched 5928 support tickets
+2025-08-24 15:10:59,396 - DataFetch - INFO - Fetching customer records
+2025-08-24 15:10:59,657 - DataFetch - INFO - Fetched 10000 Customer records
+2025-08-24 15:10:59,690 - DataFetch - INFO - Fetching Transaction data for customers
+2025-08-24 15:11:03,718 - DataFetch - INFO - Fetched 200046 transaction records
+2025-08-24 15:11:04,364 - DataFetch - INFO - Fetching support data for customers
+2025-08-24 15:11:04,531 - DataFetch - INFO - Fetched 5928 support tickets

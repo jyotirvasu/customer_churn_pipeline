@@ -1,0 +1,45 @@
+[2025-08-24T15:10:59.195+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-24T15:10:59.226+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: customer_churn_pipeline.ingest_data manual__2025-08-24T15:10:56.820953+00:00 [queued]>
+[2025-08-24T15:10:59.232+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: customer_churn_pipeline.ingest_data manual__2025-08-24T15:10:56.820953+00:00 [queued]>
+[2025-08-24T15:10:59.232+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-08-24T15:10:59.241+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): ingest_data> on 2025-08-24 15:10:56.820953+00:00
+[2025-08-24T15:10:59.247+0000] {standard_task_runner.py:63} INFO - Started process 202 to run task
+[2025-08-24T15:10:59.250+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'customer_churn_pipeline', 'ingest_data', 'manual__2025-08-24T15:10:56.820953+00:00', '--job-id', '197', '--raw', '--subdir', 'DAGS_FOLDER/***_dag.py', '--cfg-path', '/tmp/tmprsk4jky7']
+[2025-08-24T15:10:59.252+0000] {standard_task_runner.py:91} INFO - Job 197: Subtask ingest_data
+[2025-08-24T15:10:59.294+0000] {task_command.py:426} INFO - Running <TaskInstance: customer_churn_pipeline.ingest_data manual__2025-08-24T15:10:56.820953+00:00 [running]> on host e7c10817c3ee
+[2025-08-24T15:10:59.376+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@company.com' AIRFLOW_CTX_DAG_OWNER='data-team' AIRFLOW_CTX_DAG_ID='customer_churn_pipeline' AIRFLOW_CTX_TASK_ID='ingest_data' AIRFLOW_CTX_EXECUTION_DATE='2025-08-24T15:10:56.820953+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-24T15:10:56.820953+00:00'
+[2025-08-24T15:10:59.377+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-24T15:10:59.396+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:10:59,396 - DataIngestion - INFO - Starting customer data ingestion
+[2025-08-24T15:10:59.396+0000] {airflow_dag.py:82} INFO - Starting customer data ingestion
+[2025-08-24T15:10:59.396+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:10:59,396 - DataFetch - INFO - Fetching customer records
+[2025-08-24T15:10:59.396+0000] {airflow_dag.py:82} INFO - Fetching customer records
+[2025-08-24T15:10:59.658+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:10:59,657 - DataFetch - INFO - Fetched 10000 Customer records
+[2025-08-24T15:10:59.657+0000] {airflow_dag.py:82} INFO - Fetched 10000 Customer records
+[2025-08-24T15:10:59.689+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:10:59,689 - DataIngestion - INFO - Customer data ingested successfully: /opt/***/data/raw/customers/customers_20250824_151059.csv
+[2025-08-24T15:10:59.689+0000] {airflow_dag.py:82} INFO - Customer data ingested successfully: /opt/***/data/raw/customers/customers_20250824_151059.csv
+[2025-08-24T15:10:59.690+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:10:59,690 - DataIngestion - INFO - Starting transaction data ingestion
+[2025-08-24T15:10:59.690+0000] {airflow_dag.py:82} INFO - Starting transaction data ingestion
+[2025-08-24T15:10:59.690+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:10:59,690 - DataFetch - INFO - Fetching Transaction data for customers
+[2025-08-24T15:10:59.690+0000] {airflow_dag.py:82} INFO - Fetching Transaction data for customers
+[2025-08-24T15:11:03.719+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:11:03,718 - DataFetch - INFO - Fetched 200046 transaction records
+[2025-08-24T15:11:03.718+0000] {airflow_dag.py:82} INFO - Fetched 200046 transaction records
+[2025-08-24T15:11:04.357+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:11:04,356 - DataIngestion - INFO - Transaction data ingested successfully: /opt/***/data/raw/transactions/transactions_20250824_151103.csv
+[2025-08-24T15:11:04.356+0000] {airflow_dag.py:82} INFO - Transaction data ingested successfully: /opt/***/data/raw/transactions/transactions_20250824_151103.csv
+[2025-08-24T15:11:04.363+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:11:04,363 - DataIngestion - INFO - Starting support data ingestion
+[2025-08-24T15:11:04.363+0000] {airflow_dag.py:82} INFO - Starting support data ingestion
+[2025-08-24T15:11:04.364+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:11:04,364 - DataFetch - INFO - Fetching support data for customers
+[2025-08-24T15:11:04.364+0000] {airflow_dag.py:82} INFO - Fetching support data for customers
+[2025-08-24T15:11:04.531+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:11:04,531 - DataFetch - INFO - Fetched 5928 support tickets
+[2025-08-24T15:11:04.531+0000] {airflow_dag.py:82} INFO - Fetched 5928 support tickets
+[2025-08-24T15:11:04.551+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:11:04,551 - DataIngestion - INFO - Support data ingested successfully: /opt/***/data/raw/support/support_20250824_151104.csv
+[2025-08-24T15:11:04.551+0000] {airflow_dag.py:82} INFO - Support data ingested successfully: /opt/***/data/raw/support/support_20250824_151104.csv
+[2025-08-24T15:11:04.556+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:11:04,556 - DataVersioning - INFO - Created data version: v20250824_151104
+[2025-08-24T15:11:04.556+0000] {airflow_dag.py:82} INFO - Created data version: v20250824_151104
+[2025-08-24T15:11:04.558+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:11:04,557 - PipelineMonitor - INFO - Logged metrics for data_ingestion: success in 5.17s
+[2025-08-24T15:11:04.557+0000] {airflow_dag.py:82} INFO - Logged metrics for data_ingestion: success in 5.17s
+[2025-08-24T15:11:04.577+0000] {python.py:237} INFO - Done. Returned value was: Data ingested successfully. Version: v20250824_151104
+[2025-08-24T15:11:04.577+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-24T15:11:04.600+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=customer_churn_pipeline, task_id=ingest_data, execution_date=20250824T151056, start_date=20250824T151059, end_date=20250824T151104
+[2025-08-24T15:11:04.651+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-08-24T15:11:04.681+0000] {taskinstance.py:3482} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2025-08-24T15:11:04.682+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

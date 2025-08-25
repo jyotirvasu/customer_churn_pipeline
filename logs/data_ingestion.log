@@ -1,0 +1,20 @@
+2025-08-24 14:42:48,746 - DataIngestion - INFO - Starting customer data ingestion
+2025-08-24 14:42:48,750 - DataIngestion - ERROR - Customer data ingestion failed: Execution failed on sql 'SELECT * FROM customers': no such table: customers
+2025-08-24 14:44:17,152 - DataIngestion - INFO - Starting customer data ingestion
+2025-08-24 14:44:17,156 - DataIngestion - ERROR - Customer data ingestion failed: Execution failed on sql 'SELECT * FROM customers': no such table: customers
+2025-08-24 14:53:19,553 - DataIngestion - INFO - Starting customer data ingestion
+2025-08-24 14:53:19,562 - DataIngestion - ERROR - Customer data ingestion failed: Execution failed on sql 'SELECT * FROM customers': no such table: customers
+2025-08-24 14:54:08,859 - DataIngestion - INFO - Starting customer data ingestion
+2025-08-24 14:54:08,861 - DataIngestion - ERROR - Customer data ingestion failed: Execution failed on sql 'SELECT * FROM customers': no such table: customers
+2025-08-24 15:06:44,140 - DataIngestion - INFO - Starting customer data ingestion
+2025-08-24 15:06:45,341 - DataIngestion - INFO - Customer data ingested successfully: /opt/airflow/data/raw/customers/customers_20250824_150645.csv
+2025-08-24 15:06:45,341 - DataIngestion - INFO - Starting transaction data ingestion
+2025-08-24 15:06:53,647 - DataIngestion - INFO - Transaction data ingested successfully: /opt/airflow/data/raw/transactions/transactions_20250824_150653.csv
+2025-08-24 15:06:53,653 - DataIngestion - INFO - Starting support data ingestion
+2025-08-24 15:06:54,218 - DataIngestion - INFO - Support data ingested successfully: /opt/airflow/data/raw/support/support_20250824_150654.csv
+2025-08-24 15:10:59,396 - DataIngestion - INFO - Starting customer data ingestion
+2025-08-24 15:10:59,689 - DataIngestion - INFO - Customer data ingested successfully: /opt/airflow/data/raw/customers/customers_20250824_151059.csv
+2025-08-24 15:10:59,690 - DataIngestion - INFO - Starting transaction data ingestion
+2025-08-24 15:11:04,356 - DataIngestion - INFO - Transaction data ingested successfully: /opt/airflow/data/raw/transactions/transactions_20250824_151103.csv
+2025-08-24 15:11:04,363 - DataIngestion - INFO - Starting support data ingestion
+2025-08-24 15:11:04,551 - DataIngestion - INFO - Support data ingested successfully: /opt/airflow/data/raw/support/support_20250824_151104.csv

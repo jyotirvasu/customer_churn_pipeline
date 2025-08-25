@@ -1,0 +1,19 @@
+[2025-08-24T15:15:46.346+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-24T15:15:46.391+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: customer_churn_pipeline.data_versioning_summary manual__2025-08-24T15:15:33.260075+00:00 [queued]>
+[2025-08-24T15:15:46.399+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: customer_churn_pipeline.data_versioning_summary manual__2025-08-24T15:15:33.260075+00:00 [queued]>
+[2025-08-24T15:15:46.399+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 3
+[2025-08-24T15:15:46.412+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): data_versioning_summary> on 2025-08-24 15:15:33.260075+00:00
+[2025-08-24T15:15:46.427+0000] {standard_task_runner.py:63} INFO - Started process 212 to run task
+[2025-08-24T15:15:46.434+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'customer_churn_pipeline', 'data_versioning_summary', 'manual__2025-08-24T15:15:33.260075+00:00', '--job-id', '203', '--raw', '--subdir', 'DAGS_FOLDER/***_dag.py', '--cfg-path', '/tmp/tmpzcwmxx1l']
+[2025-08-24T15:15:46.439+0000] {standard_task_runner.py:91} INFO - Job 203: Subtask data_versioning_summary
+[2025-08-24T15:15:46.521+0000] {task_command.py:426} INFO - Running <TaskInstance: customer_churn_pipeline.data_versioning_summary manual__2025-08-24T15:15:33.260075+00:00 [running]> on host e7c10817c3ee
+[2025-08-24T15:15:46.638+0000] {taskinstance.py:2644} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='admin@company.com' AIRFLOW_CTX_DAG_OWNER='data-team' AIRFLOW_CTX_DAG_ID='customer_churn_pipeline' AIRFLOW_CTX_TASK_ID='data_versioning_summary' AIRFLOW_CTX_EXECUTION_DATE='2025-08-24T15:15:33.260075+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-24T15:15:33.260075+00:00'
+[2025-08-24T15:15:46.639+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-08-24T15:15:46.667+0000] {logging_mixin.py:188} WARNING - 2025-08-24 15:15:46,667 - PipelineMonitor - INFO - Logged metrics for data_versioning_summary: success in 0.01s
+[2025-08-24T15:15:46.667+0000] {airflow_dag.py:82} INFO - Logged metrics for data_versioning_summary: success in 0.01s
+[2025-08-24T15:15:46.668+0000] {python.py:237} INFO - Done. Returned value was: Data versioning summary completed. Current version: v20250824_151104
+[2025-08-24T15:15:46.668+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-08-24T15:15:46.700+0000] {taskinstance.py:1205} INFO - Marking task as SUCCESS. dag_id=customer_churn_pipeline, task_id=data_versioning_summary, execution_date=20250824T151533, start_date=20250824T151546, end_date=20250824T151546
+[2025-08-24T15:15:46.738+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-08-24T15:15:46.761+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-24T15:15:46.763+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

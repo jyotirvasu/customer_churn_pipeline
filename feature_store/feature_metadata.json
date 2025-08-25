@@ -1,0 +1,42 @@
+{
+  "features": {
+    "customer_id": {
+      "description": "Unique customer identifier",
+      "type": "categorical"
+    },
+    "age": {
+      "description": "Customer age",
+      "type": "numerical"
+    },
+    "income": {
+      "description": "Annual income",
+      "type": "numerical"
+    },
+    "tenure_months": {
+      "description": "Months as customer",
+      "type": "numerical"
+    },
+    "total_amount": {
+      "description": "Total transaction amount",
+      "type": "numerical"
+    },
+    "transaction_count": {
+      "description": "Number of transactions",
+      "type": "numerical"
+    },
+    "avg_satisfaction": {
+      "description": "Average satisfaction score",
+      "type": "numerical"
+    },
+    "is_high_value": {
+      "description": "High value customer flag",
+      "type": "binary"
+    },
+    "has_complaints": {
+      "description": "Has support tickets",
+      "type": "binary"
+    }
+  },
+  "version": "1.0",
+  "created_date": "2025-08-24T15:15:58.267325"
+}

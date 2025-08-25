@@ -1,0 +1,9 @@
+2025-08-24 15:06:56,551 - DataValidator - INFO - Validating customer data
+2025-08-24 15:06:56,576 - DataValidator - INFO - Validation completed. Issues found: 0
+2025-08-24 15:06:56,577 - DataValidator - INFO - Quality report generated: /opt/airflow/reports/data_quality_report_20250824_150656.txt
+2025-08-24 15:13:02,028 - DataValidator - INFO - Validating customer data
+2025-08-24 15:13:02,041 - DataValidator - INFO - Validation completed. Issues found: 0
+2025-08-24 15:13:02,042 - DataValidator - INFO - Quality report generated: /opt/airflow/reports/data_quality_report_20250824_151302.txt
+2025-08-24 15:15:46,702 - DataValidator - INFO - Validating customer data
+2025-08-24 15:15:46,730 - DataValidator - INFO - Validation completed. Issues found: 0
+2025-08-24 15:15:46,730 - DataValidator - INFO - Quality report generated: /opt/airflow/reports/data_quality_report_20250824_151546.txt
